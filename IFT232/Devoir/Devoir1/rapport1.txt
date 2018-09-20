@@ -1,0 +1,31 @@
+Équipe:
+Jérémy Besserer-Lemay 11 049 349
+Christopher Brown     18 106 345
+
+---------------------------Objectif 1 : Bool et Int ----------------------------------
+Ajouts:
+BoolPrimitiveAnd
+BoolPrimitiveOr
+BoolPrimitiveOpposite
+BoolPrimitiveOperation
+
+BoolPrimitiveOperation est calqué sur IntegerPrimitiveOperation. La méthode init() est toutefois abstraite pour pouvoir surcharger
+le nombre d'arguments dans ses enfants. Également, PrimitiveOperationAtom a maintenant une méthode getArgCount() pour avoir le nombre
+d'arguments dans une opération binaire ou ayant seulement l'argument de départ.
+
+IntegerPrimitiveHigherThan
+IntegerPrimitiveLowerThan
+
+Les méthodes d'opération sont toutes des extensions de opération primitives des IntAtom avec quelques détails
+changés dans BoolPrimitiveOpposition(comme expliqué plus haut).
+
+JarvisInterpreter et basictypes.txt
+Les définitions des opérations sont présentes dans les cheat codes de JarvisInterpreter et dans les dictionnaires des atomes dans 
+basictypes.txt.
+
+---------------------------Objectif 2 : Rectangles ----------------------------------
+Les fonctions nombreNegatif, nombrePositif, calcCdt et abs sont présentes dans le fichier util.txt de
+JarvisLib. La fonction calcCdt est un ifelse tandis que nombreNegatif et nombrePositif sont ses deux
+possibilitées. la fonction abs fait simplement vérifier si la valeur est positive ou négative.
+
+rectangle.txt appelle la fonction abs dans ses fonctions largeur, hauteur et périmètre.
