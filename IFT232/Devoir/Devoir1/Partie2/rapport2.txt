@@ -1,0 +1,28 @@
+Équipe:
+Jérémy Besserer-Lemay 11 049 349
+Christopher Brown     18 106 345
+
+---------------------------Objectif 3 : Heritage 1 ----------------------------------
+Ajouts:
+Object (basictypes.txt)
+
+Creation d'une classe vide qui hérite de Class de Jarvis. Modification de l'interpréteur de Jarvis pour rajouter le champ 'superclass'
+Recherche récursive de méthode dans la méthode message de ObjectAtom jusqu'à ce qu'on arrive à la class Class qui n'a pas de superclass.
+
+---------------------------Objectif 4 : Mutateur universel----------------------------------
+Ajouts:
+OperatorSetPrimitive
+
+Ajouts de quelques methodes pour aller chercher les valeurs dans ObjectAtom. Egalement, la méthode set est ajouté à la Classe Class dans
+JarvisInterpreter. La recherche d'attributs est changée complètement pour objectif 5 et 6, donc il est simple de chercher un attribut
+et de la changer.
+
+---------------------------Objectif 5 : Heritage 2----------------------------------
+Ajouts:
+
+Modification dans la classe OperatorNewPrimitive pour permettre l'ajout d'attributs durant la création basé sur la parenté. L'ajout
+est toutefois inverse au tests le premier attribut est celui dans la classe courante ou le plus proche parent.
+
+---------------------------Objectif 6 : Mutateur complet----------------------------------
+Aucun changement au delà de la vérification que l'objet de duplique pas des attributs de ses parents, cet héritage est donc relativement
+faible car il est basé sur le nom de l'attribut, mais il s'agit d'un excellent exercice de logique.
